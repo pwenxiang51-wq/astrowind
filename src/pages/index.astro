@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
-  title: 'Velox 极客基地',
+  title: 'VELOX',
   ignoreTitleTemplate: true,
 };
 ---
@@ -11,44 +11,78 @@ const metadata = {
 <Layout metadata={metadata}>
   
   <Hero
-    image={{ src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200', alt: 'Velox 极客主板' }}
+    image={{ src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200', alt: 'Velox Core' }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white">Velox 极客基地</span>
+      <span class="text-accent dark:text-white uppercase tracking-widest">VELOX</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="font-semibold">专注 VPS 高级运维、自动化脚本开发与独立站出海实战。</span><br/>
-      摆脱 Shopify 的高昂月租，用纯静态无头架构打造秒开级的高级外贸独立站。一次性交付，终身无抽成。
+      <span class="font-semibold">Empowering your digital journey.</span><br/>
+      Premium tools, scripts, and gear for creators and developers worldwide.
     </Fragment>
   </Hero>
 
-  <div class="mt-8 flex flex-col items-center justify-center">
-  <button class="snipcart-add-item bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-blue-700 shadow-2xl transition duration-300 transform hover:scale-105"
-    data-item-id="velox-pro-build-2026"
-    data-item-price="2999.00"
-    data-item-image="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300"
-    data-item-name="Velox 顶级极客独立站搭建 (终身版)">
-    🛒 立即购买独立站搭建服务 ($2,999)
-  </button>
+  <div class="mt-8 max-w-6xl mx-auto px-4 sm:px-6 mb-24">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Featured Products</h2>
+      <p class="mt-4 text-lg text-gray-500">Curated essentials for your workspace.</p>
+    </div>
 
-  <div class="mt-6 flex flex-col items-center">
-    <p class="text-sm text-gray-500 mb-2 font-medium">100% 安全支付保障</p>
-    <div class="flex gap-4 grayscale opacity-70 hover:opacity-100 transition duration-300">
-      <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="PayPal" class="h-6" />
-      <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-6" />
-      <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" class="h-6" />
-      <img src="https://cdn-icons-png.flaticon.com/512/349/349232.png" alt="American Express" class="h-6" />
-      <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" alt="Google Pay" class="h-6" />
+    <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
+      
+      <div class="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 p-4 hover:shadow-xl transition-shadow">
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-xl bg-gray-200 h-64">
+          <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?w=500" alt="VPS Script" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="mt-5 flex justify-between items-end">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Auto Deploy Script</h3>
+            <p class="mt-1 text-sm text-gray-500">Instant Server Setup</p>
+          </div>
+          <p class="text-xl font-black text-blue-600">$29.99</p>
+        </div>
+        <button class="snipcart-add-item mt-5 w-full bg-gray-900 dark:bg-white dark:text-gray-900 text-white py-3 px-4 rounded-xl font-bold hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white transition shadow-lg"
+          data-item-id="prod-01" data-item-price="29.99" data-item-image="https://images.unsplash.com/photo-1595225476474-87563907a212?w=500" data-item-name="Auto Deploy Script">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+      <div class="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 p-4 hover:shadow-xl transition-shadow">
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-xl bg-gray-200 h-64">
+          <img src="https://images.unsplash.com/photo-1511467687858-23d9fae243ac?w=500" alt="Keyboard" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="mt-5 flex justify-between items-end">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Pro Keyboard</h3>
+            <p class="mt-1 text-sm text-gray-500">Wireless Mechanical</p>
+          </div>
+          <p class="text-xl font-black text-blue-600">$149.00</p>
+        </div>
+        <button class="snipcart-add-item mt-5 w-full bg-gray-900 dark:bg-white dark:text-gray-900 text-white py-3 px-4 rounded-xl font-bold hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white transition shadow-lg"
+          data-item-id="prod-02" data-item-price="149.00" data-item-image="https://images.unsplash.com/photo-1511467687858-23d9fae243ac?w=500" data-item-name="Pro Keyboard">
+          🛒 Add to Cart
+        </button>
+      </div>
+
+      <div class="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-gray-100 dark:border-slate-700 p-4 hover:shadow-xl transition-shadow">
+        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-xl bg-gray-200 h-64">
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500" alt="Workspace" class="h-full w-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="mt-5 flex justify-between items-end">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Zero Trust Guide</h3>
+            <p class="mt-1 text-sm text-gray-500">PDF E-Book</p>
+          </div>
+          <p class="text-xl font-black text-blue-600">$19.99</p>
+        </div>
+        <button class="snipcart-add-item mt-5 w-full bg-gray-900 dark:bg-white dark:text-gray-900 text-white py-3 px-4 rounded-xl font-bold hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white transition shadow-lg"
+          data-item-id="prod-03" data-item-price="19.99" data-item-image="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500" data-item-name="Zero Trust Guide">
+          🛒 Add to Cart
+        </button>
+      </div>
+
     </div>
   </div>
-
-  <div class="mt-6 grid grid-cols-2 gap-4 text-xs text-gray-400 font-medium">
-    <div class="flex items-center gap-1">✅ 终身零月租</div>
-    <div class="flex items-center gap-1">✅ 全球秒开加速</div>
-    <div class="flex items-center gap-1">✅ 1对1技术交付</div>
-    <div class="flex items-center gap-1">✅ 源码 100% 掌握</div>
-  </div>
-</div>
 
 </Layout>
