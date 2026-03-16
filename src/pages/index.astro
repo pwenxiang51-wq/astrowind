@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
-  title: '文祥的赛博实验室 — Velox 极客基地',
+  title: 'Velox 极客基地',
   ignoreTitleTemplate: true,
 };
 ---
@@ -14,7 +14,6 @@ const metadata = {
     image={{ src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200', alt: 'Velox 极客主板' }}
   >
     <Fragment slot="title">
-      文祥的赛博实验室：<br/>
       <span class="text-accent dark:text-white">Velox 极客基地</span>
     </Fragment>
 
@@ -24,14 +23,32 @@ const metadata = {
     </Fragment>
   </Hero>
 
-  <div class="mt-4 mb-32 flex justify-center">
-    <button class="snipcart-add-item bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-blue-700 shadow-2xl transition duration-300 transform hover:scale-105"
-      data-item-id="velox-pro-build"
-      data-item-price="2999.00"
-      data-item-image="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300"
-      data-item-name="顶级极客独立站 (终身买断制)">
-      🛒 立即购买独立站搭建服务 ($2999)
-    </button>
+  <div class="mt-8 flex flex-col items-center justify-center">
+  <button class="snipcart-add-item bg-blue-600 text-white px-10 py-4 rounded-full font-bold text-xl hover:bg-blue-700 shadow-2xl transition duration-300 transform hover:scale-105"
+    data-item-id="velox-pro-build-2026"
+    data-item-price="2999.00"
+    data-item-image="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300"
+    data-item-name="Velox 顶级极客独立站搭建 (终身版)">
+    🛒 立即购买独立站搭建服务 ($2,999)
+  </button>
+
+  <div class="mt-6 flex flex-col items-center">
+    <p class="text-sm text-gray-500 mb-2 font-medium">100% 安全支付保障</p>
+    <div class="flex gap-4 grayscale opacity-70 hover:opacity-100 transition duration-300">
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" alt="PayPal" class="h-6" />
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" class="h-6" />
+      <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" class="h-6" />
+      <img src="https://cdn-icons-png.flaticon.com/512/349/349232.png" alt="American Express" class="h-6" />
+      <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" alt="Google Pay" class="h-6" />
+    </div>
   </div>
+
+  <div class="mt-6 grid grid-cols-2 gap-4 text-xs text-gray-400 font-medium">
+    <div class="flex items-center gap-1">✅ 终身零月租</div>
+    <div class="flex items-center gap-1">✅ 全球秒开加速</div>
+    <div class="flex items-center gap-1">✅ 1对1技术交付</div>
+    <div class="flex items-center gap-1">✅ 源码 100% 掌握</div>
+  </div>
+</div>
 
 </Layout>
